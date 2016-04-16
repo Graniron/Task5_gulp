@@ -1,0 +1,366 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700);
+/* General styles */
+body {
+  min-width: 380px;
+  font-family: 'Open Sans', sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.container {
+  width: 76%;
+  margin: 0 auto; }
+
+/* Styles of header */
+header {
+  width: 100%;
+  min-height: 700px;
+  max-height: 930px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  color: white;
+  background: url("./../img/apples.jpg") no-repeat;
+  background-size: 100%; }
+
+.brand {
+  font-weight: 600;
+  line-height: 3.5em; }
+
+.company_title {
+  margin-top: 11%;
+  text-align: center; }
+
+.company_name {
+  font-size: 2.7em;
+  font-weight: 500; }
+  .company_name sup {
+    font-size: 0.6em;
+    font-weight: 300; }
+
+.company_short_description {
+  font-size: 1.3em;
+  font-weight: 500; }
+
+.title_accent {
+  font-size: 1.5em; }
+
+.read_more {
+  display: inline-block;
+  margin-top: 10%;
+  width: 25%;
+  border: 2px solid white;
+  line-height: 2.3em;
+  font-weight: bold; }
+
+/* Common styles for header and footer navigation */
+.main_menu,
+footer nav {
+  float: right; }
+
+.main_menu li,
+.footer_menu li {
+  display: inline-block;
+  margin-left: 25px;
+  padding-bottom: 10px;
+  font-weight: 600; }
+
+.main_menu li:hover,
+.footer_menu li:hover {
+  border-bottom: 2px solid lightblue; }
+
+/* Styles of About section */
+.about, .about .container {
+  height: 350px; }
+
+.col_about {
+  display: inline-block;
+  width: 48%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.col_about_accent {
+  font-size: 1.5em;
+  margin-right: 2%; }
+
+/* Styles of Articles section */
+.articles {
+  background-color: #F3F3F3;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.articles_title {
+  margin-bottom: 70px;
+  text-align: center;
+  font-weight: 400; }
+
+.article {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5%; }
+
+.article img {
+  width: 100%; }
+
+.img_title {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  width: 100%;
+  color: white;
+  font-weight: 300; }
+  .img_title span {
+    font-weight: 700; }
+
+div.text-content {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 500ms; }
+  div.text-content img {
+    max-width: 20%; }
+
+.article_lg div.text-content img {
+  max-width: 10%; }
+
+.article a:hover div.text-content {
+  opacity: 1; }
+
+.article_lg {
+  width: 66%; }
+
+.article_sm {
+  width: 31.7%; }
+
+.article:nth-child(even) {
+  margin-right: 1.5%; }
+
+.subscribe {
+  width: 100%;
+  height: 190px;
+  margin-top: 10%;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 1.3em; }
+
+.subscribe form {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.subscribe label {
+  margin-left: 5%;
+  margin-right: 8%;
+  font-size: 1.3em; }
+
+.subscribe input {
+  width: 30%;
+  height: 35px;
+  padding: 6px 1%;
+  background-color: #eaeaea;
+  border: 1px solid black; }
+
+.subscribe button {
+  width: 15%;
+  height: 49.5px;
+  margin-left: -5px;
+  background-color: #343638;
+  border: 1px solid transparent;
+  color: white; }
+
+/* Styles of News section */
+.news {
+  padding: 5% 0; }
+
+.col_news {
+  display: inline-block;
+  width: 18%;
+  vertical-align: top;
+  margin-right: 8.9%; }
+
+.col_news p {
+  color: grey;
+  font-size: 0.9em; }
+
+.col_news:last-child {
+  margin-right: 0; }
+
+.contacts p {
+  margin-top: -5px;
+  line-height: 2em; }
+
+p.publish_time {
+  font-style: italic;
+  color: lightgrey; }
+
+.footer_subscribe {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin-top: 30px;
+  font-size: 0.9em; }
+
+.footer_subscribe input {
+  width: 50%;
+  padding: 2px 9px;
+  font-style: italic; }
+
+.footer_subscribe button {
+  width: 40%;
+  height: 41.5px; }
+
+/* Styles of footer */
+footer .container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 1px solid #f7eded; }
+
+.copyright {
+  display: inline-block;
+  margin-top: 15px;
+  color: lightgrey; }
+
+/* Styles for responsivness*/
+@media (max-width: 1400px) {
+  header {
+    max-height: 700px;
+    min-height: 550px; }
+  .subscribe form {
+    width: 100%; }
+  .footer_subscribe input {
+    width: 100%;
+    padding: 2px 1%;
+    box-sizing: border-box;
+    font-style: italic; }
+  .footer_subscribe button {
+    width: 100%;
+    margin: 0; }
+  .col_news {
+    margin-right: 8%; } }
+
+@media (max-width: 1200px) {
+  .subscribe form {
+    text-align: center; }
+  .subscribe label {
+    display: block;
+    margin-bottom: 2%; } }
+
+@media (max-width: 1100px) {
+  header {
+    min-height: 400px; }
+  .read_more {
+    margin-top: 3%;
+    margin-bottom: 2%; }
+  .company_title {
+    margin-top: 3%; }
+  .col_about {
+    width: 100%;
+    top: 28%; }
+  .subscribe {
+    font-size: 1em; }
+  .col_news {
+    width: 41%; } }
+
+@media (max-width: 800px) {
+  header {
+    min-height: 300px; }
+  .company_name {
+    font-size: 1.7em;
+    font-weight: 400; }
+  .articles .article_sm {
+    width: 48%;
+    margin-right: 0; }
+  .article_sm:nth-child(odd) {
+    margin-right: 1.81%; }
+  .article_lg {
+    width: 100%; }
+  .articles .subscribe input {
+    width: 52%; }
+  .articles .subscribe button {
+    width: 20%; } }
+
+@media (max-width: 700px) {
+  header {
+    padding-top: 0; }
+  .brand {
+    display: block;
+    text-align: center; }
+  .read_more {
+    margin-top: -2%;
+    line-height: 1.2em; }
+  .copyright {
+    display: block;
+    text-align: center; }
+  .main_menu,
+  footer nav,
+  .footer_menu {
+    float: none;
+    text-align: center;
+    padding: 0; }
+  .main_menu li {
+    border-bottom: 2px solid white; }
+  .footer_menu li {
+    border-bottom: 2px solid black; }
+  .main_menu li:first-child,
+  .footer_menu li:first-child {
+    margin-left: 0; } }
+
+@media (max-width: 600px) {
+  header {
+    min-height: 250px; }
+  .company_name {
+    font-size: 1.5em;
+    line-height: 1em; }
+  .company_short_description {
+    font-size: 1.1em; }
+  .col_about_accent {
+    font-size: 1.2em; }
+  .col_news {
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  header {
+    min-height: 200px; }
+  .brand {
+    display: none; }
+  .main_menu li,
+  .footer_menu li {
+    margin-left: 1%; }
+  .articles_title {
+    margin-bottom: 15px; }
+  .articles .article_sm {
+    width: 100%; }
+  .articles .subscribe input {
+    width: 60%;
+    margin-bottom: 1%;
+    box-sizing: border-box; }
+  .articles .subscribe button {
+    width: 60%;
+    height: 40px;
+    margin-left: 0; } }
+
+@media (max-width: 400px) {
+  header {
+    min-height: 100px; }
+  .col_about {
+    top: 0;
+    -webkit-transform: none;
+    transform: none; }
+  .col_about_accent {
+    font-size: 1em;
+    margin-bottom: 2px; } }

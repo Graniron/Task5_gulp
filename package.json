@@ -1,0 +1,27 @@
+{
+  "name": "task5-gulp",
+  "version": "1.0.0",
+  "description": "Task #5 gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roman Yavoriv",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^2.2.0",
+    "run-sequence": "^1.1.5"
+  }
+}
